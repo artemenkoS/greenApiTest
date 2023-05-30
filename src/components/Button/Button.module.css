@@ -1,0 +1,29 @@
+.root {
+  background-color: var(--mainColor);
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: var(--borderRadius);
+  padding: 0 16px;
+  font-size: 20px;
+  align-self: center;
+  opacity: 0.9;
+  height: var(--fieldHeight);
+  cursor: pointer;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.root:hover {
+  opacity: 1;
+}
+
+.root:not(:disabled):active {
+  background-color: #3e8e41;
+}
+
+.root:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

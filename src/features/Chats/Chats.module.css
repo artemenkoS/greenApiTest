@@ -1,0 +1,90 @@
+.chatContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 900px;
+}
+
+.contacts {
+  flex: 1;
+  padding: 20px;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+}
+
+.chatList {
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.chatItem {
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.chatItem:hover {
+  background-color: #eaeaea;
+}
+
+.chatItem.active {
+  background-color: #dcf8c6;
+}
+
+.chat {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.chatHeader {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.chatTitle {
+  margin: 0;
+}
+
+.chatContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chatForm {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.phoneNumberInput {
+  width: 100%;
+  height: var(--fieldHeight);
+  padding: 10px 0 10px 10px;
+  flex: 3;
+  font-size: 20px;
+  border: none;
+  border-radius: var(--borderRadius);
+  background-color: #ded9d9;
+}
+
+.createChatButton {
+  margin: 10px 0;
+}
